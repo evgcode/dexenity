@@ -1,6 +1,6 @@
 # Dexenity
 
-Investment intelligence platform for disciplined long-term decision making.
+Investment intelligence platform for systematic financial research.
 
 ## Project Overview
 
@@ -22,7 +22,7 @@ Dexenity addresses these challenges through systematic data processing and deter
 The platform follows a simple flow:
 
 ```
-Financial Data → Systematic Analysis → Structured Insights → Research Interface
+Financial Data → Analysis Pipeline → Structured Insights → Research Interface
 ```
 
 Key principles:
@@ -31,14 +31,9 @@ Key principles:
 - **Explainability**: Every insight includes supporting evidence
 - **Reproducibility**: Research processes can be repeated and validated
 
-Analysis evaluates investments across multiple dimensions:
+The platform applies systematic analysis methods to transform financial data into structured research insights.
 
-- Fundamental quality assessment
-- Technical pattern recognition
-- Structural change detection
-- Market context classification
-
-All analysis is deterministic and explainable, not black-box predictions.
+All analysis emphasizes transparency, reproducibility, and disciplined long-term decision making.
 
 ## Current Status
 
@@ -78,6 +73,12 @@ This repository contains public documentation for the Dexenity project. The oper
 - Internal methodologies
 
 This separation allows us to describe the project publicly while protecting core technology.
+
+## Infrastructure Direction
+
+Dexenity processes financial data and analytical workloads that require scalable compute and storage infrastructure.
+
+The platform is designed to run in modern cloud environments that support reliable data processing, research workflows, and reproducible analysis.
 
 ## License and Usage
 

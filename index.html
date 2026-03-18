@@ -49,23 +49,48 @@
             padding: 120px 24px 80px;
         }
 
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
         .logo {
-            display: inline-block;
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3),
+                        0 0 0 1px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .logo:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(95, 140, 255, 0.25),
+                        0 0 0 1px rgba(255, 255, 255, 0.15);
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .brand-name {
             font-size: 42px;
             font-weight: 700;
             letter-spacing: 1px;
-            position: relative;
+            line-height: 1;
         }
 
-        .logo::after {
-            content: "";
-            display: block;
+        .brand-accent {
             width: 72px;
             height: 3px;
-            margin-top: 14px;
             border-radius: 999px;
             background: linear-gradient(90deg, var(--accent), var(--accent2));
             box-shadow: 0 0 24px rgba(95, 140, 255, 0.45);
+            margin-left: 0;
         }
 
         .tagline {
@@ -145,7 +170,16 @@
                 padding: 88px 20px 56px;
             }
 
+            .logo-container {
+                gap: 3px;
+            }
+
             .logo {
+                width: 44px;
+                height: 44px;
+            }
+
+            .brand-name {
                 font-size: 36px;
             }
 
@@ -169,7 +203,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">Dexenity</div>
+        <div class="logo-container">
+            <img src="logo.png" alt="Dexenity Logo" class="logo">
+            <div class="brand">
+                <div class="brand-name">exenity</div>
+                <div class="brand-accent"></div>
+            </div>
+        </div>
         <div class="tagline">Investment intelligence for systematic research.</div>
 
         <div class="section">
